@@ -44,15 +44,31 @@ public class TelaLogin extends javax.swing.JFrame {
         jPanel2.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 60, 110, 90));
 
         btnCadastrar.setText("CADASTRAR");
+        btnCadastrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCadastrarActionPerformed(evt);
+            }
+        });
         jPanel2.add(btnCadastrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 250, -1, -1));
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 0, 200, 380));
 
         btnEntrar.setText("ENTRAR");
+        btnEntrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEntrarActionPerformed(evt);
+            }
+        });
         jPanel1.add(btnEntrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 280, -1, -1));
 
         senha.setText("Senha");
         jPanel1.add(senha, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, -1, -1));
+
+        txtLogin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtLoginActionPerformed(evt);
+            }
+        });
         jPanel1.add(txtLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, 270, -1));
 
         login.setText("Login");
@@ -60,9 +76,20 @@ public class TelaLogin extends javax.swing.JFrame {
 
         jLabel2.setText("LOGIN");
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 10, -1, -1));
+
+        passSenha.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                passSenhaActionPerformed(evt);
+            }
+        });
         jPanel1.add(passSenha, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 160, 270, -1));
 
         btnEsqueciSenha.setText("Esqueci minha senha");
+        btnEsqueciSenha.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEsqueciSenhaActionPerformed(evt);
+            }
+        });
         jPanel1.add(btnEsqueciSenha, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 200, 150, -1));
 
         checkSalvarSenha.setText("Salvar senha");
@@ -72,6 +99,34 @@ public class TelaLogin extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void txtLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtLoginActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtLoginActionPerformed
+
+    private void passSenhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passSenhaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_passSenhaActionPerformed
+
+    private void btnEsqueciSenhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEsqueciSenhaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnEsqueciSenhaActionPerformed
+
+    private void btnEntrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEntrarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnEntrarActionPerformed
+
+    private void btnCadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCadastrarActionPerformed
+       TelaCadastro telaCadastro = new TelaCadastro();
+       
+       
+       telaCadastro.setVisible(true);
+        
+        
+        
+        
+        
+    }//GEN-LAST:event_btnCadastrarActionPerformed
 
     
     public static void main(String args[]) {
