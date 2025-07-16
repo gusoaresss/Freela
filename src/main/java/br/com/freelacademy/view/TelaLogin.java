@@ -109,7 +109,7 @@ public class TelaLogin extends javax.swing.JFrame {
     }//GEN-LAST:event_passSenhaActionPerformed
 
     private void btnEsqueciSenhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEsqueciSenhaActionPerformed
-        // TODO add your handling code here:
+       java.awt.EventQueue.invokeLater(() -> new TelaResetSenha() .setVisible(true));
     }//GEN-LAST:event_btnEsqueciSenhaActionPerformed
 
     private void btnEntrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEntrarActionPerformed

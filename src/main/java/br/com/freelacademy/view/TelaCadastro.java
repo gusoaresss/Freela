@@ -30,7 +30,7 @@ public class TelaCadastro extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
-        btnLogin = new javax.swing.JButton();
+        btnLoginPgnCadastro = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
         txtTelefone = new javax.swing.JTextField();
         checkTermosCond = new javax.swing.JCheckBox();
@@ -91,10 +91,10 @@ public class TelaCadastro extends javax.swing.JFrame {
                 .addGap(39, 39, 39))
         );
 
-        btnLogin.setText("LOGIN");
-        btnLogin.addActionListener(new java.awt.event.ActionListener() {
+        btnLoginPgnCadastro.setText("LOGIN");
+        btnLoginPgnCadastro.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnLoginActionPerformed(evt);
+                btnLoginPgnCadastroActionPerformed(evt);
             }
         });
 
@@ -109,7 +109,7 @@ public class TelaCadastro extends javax.swing.JFrame {
                         .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(64, 64, 64)
-                        .addComponent(btnLogin)))
+                        .addComponent(btnLoginPgnCadastro)))
                 .addContainerGap(44, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
@@ -118,7 +118,7 @@ public class TelaCadastro extends javax.swing.JFrame {
                 .addGap(86, 86, 86)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(88, 88, 88)
-                .addComponent(btnLogin)
+                .addComponent(btnLoginPgnCadastro)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -290,9 +290,9 @@ public class TelaCadastro extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_checkTermosCondActionPerformed
 
-    private void btnLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLoginActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnLoginActionPerformed
+    private void btnLoginPgnCadastroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLoginPgnCadastroActionPerformed
+       java.awt.EventQueue.invokeLater(() -> new TelaLogin() .setVisible(true));
+    }//GEN-LAST:event_btnLoginPgnCadastroActionPerformed
 
   
     public static void main(String args[]) {
@@ -329,7 +329,7 @@ public class TelaCadastro extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnCadastrar;
-    private javax.swing.JButton btnLogin;
+    private javax.swing.JButton btnLoginPgnCadastro;
     private javax.swing.JCheckBox checkSalvarSenha;
     private javax.swing.JCheckBox checkTermosCond;
     private javax.swing.JDesktopPane jDesktopPane1;
