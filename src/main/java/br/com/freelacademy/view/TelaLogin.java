@@ -17,7 +17,7 @@ public class TelaLogin extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        btnCadastrar = new javax.swing.JButton();
+        btnCadastrarLogin = new javax.swing.JButton();
         btnEntrar = new javax.swing.JButton();
         senha = new javax.swing.JLabel();
         txtLogin = new javax.swing.JTextField();
@@ -43,13 +43,13 @@ public class TelaLogin extends javax.swing.JFrame {
 
         jPanel2.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 60, 110, 90));
 
-        btnCadastrar.setText("CADASTRAR");
-        btnCadastrar.addActionListener(new java.awt.event.ActionListener() {
+        btnCadastrarLogin.setText("CADASTRAR");
+        btnCadastrarLogin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCadastrarActionPerformed(evt);
+                btnCadastrarLoginActionPerformed(evt);
             }
         });
-        jPanel2.add(btnCadastrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 250, -1, -1));
+        jPanel2.add(btnCadastrarLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 250, -1, -1));
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 0, 200, 380));
 
@@ -116,7 +116,7 @@ public class TelaLogin extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnEntrarActionPerformed
 
-    private void btnCadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCadastrarActionPerformed
+    private void btnCadastrarLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCadastrarLoginActionPerformed
        TelaCadastro telaCadastro = new TelaCadastro();
        
        
@@ -126,7 +126,7 @@ public class TelaLogin extends javax.swing.JFrame {
         
         
         
-    }//GEN-LAST:event_btnCadastrarActionPerformed
+    }//GEN-LAST:event_btnCadastrarLoginActionPerformed
 
     
     public static void main(String args[]) {
@@ -162,7 +162,7 @@ public class TelaLogin extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnCadastrar;
+    private javax.swing.JButton btnCadastrarLogin;
     private javax.swing.JButton btnEntrar;
     private javax.swing.JButton btnEsqueciSenha;
     private javax.swing.JCheckBox checkSalvarSenha;

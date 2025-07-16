@@ -239,38 +239,38 @@ public class TelaCadastro extends javax.swing.JFrame {
 
     private void btnCadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCadastrarActionPerformed
         
-      String nome = txtNome.getText();
-    String email = txtEmail.getText();
-    String senha = new String(passSenha.getPassword());
-    
-    if (nome.isEmpty() || email.isEmpty() || senha.isEmpty()) {
-        JOptionPane.showMessageDialog(this, "Por favor, preencha todos os campos.");
-        return;
-    }
-    
-    try {
-        ConexaoDB conexao = new ConexaoDB();
-          try (Connection conexaoDataBase = conexao.getConnection()) {
-              String sql = "INSERT INTO tb_freelancers (nome, email, senha) VALUES (?, ?, ?)";
-              PreparedStatement stmt = conexaoDataBase.prepareStatement(sql);
-              stmt.setString(1, nome);
-              stmt.setString(2, email);
-              stmt.setString(3, senha);
-              
-              
-              stmt.executeUpdate();
-              
-              JOptionPane.showMessageDialog(this, "Cadastro realizado com sucesso!");
-              
-              // Limpa campos
-              txtNome.setText("");
-              txtEmail.setText("");
-              passSenha.setText("");
-          }
-    } catch (SQLException e) {
-        JOptionPane.showMessageDialog(this, "Erro ao cadastrar: " + e.getMessage());
-    }
-        
+        String nome = txtNome.getText();
+        String email = txtEmail.getText();
+        String senha = new String(passSenha.getPassword());
+
+        if (nome.isEmpty() || email.isEmpty() || senha.isEmpty()) {
+            JOptionPane.showMessageDialog(this, "Por favor, preencha todos os campos.");
+            return;
+        }
+
+        try {
+            
+            try (Connection conexaoDataBase = ConexaoDB.getConexao()) {
+                String sql = "INSERT INTO tb_freelancer (nome, email, senha) VALUES (?, ?, ?)";
+                PreparedStatement stmt = conexaoDataBase.prepareStatement(sql);
+                stmt.setString(1, nome);
+                stmt.setString(2, email);
+                stmt.setString(3, senha);
+
+
+                stmt.executeUpdate();
+
+                JOptionPane.showMessageDialog(this, "Cadastro realizado com sucesso!");
+
+                // Limpa campos
+                txtNome.setText("");
+                txtEmail.setText("");
+                passSenha.setText("");
+            }
+        } catch (SQLException e) {
+            System.out.println("Erro: " + e.getMessage());
+            JOptionPane.showMessageDialog(this, "Erro ao cadastrar: " + e.getMessage());
+        } 
         
     }//GEN-LAST:event_btnCadastrarActionPerformed
 
