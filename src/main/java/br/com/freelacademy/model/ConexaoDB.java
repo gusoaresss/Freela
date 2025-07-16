@@ -15,8 +15,5 @@ public class ConexaoDB {
         return DriverManager.getConnection(SERVIDOR);
     }
 
-//    public Connection getConnection() {
-//        System.out.println("passou por aqui");
-//        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-//    }
+
 }

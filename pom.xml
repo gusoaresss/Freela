@@ -20,6 +20,6 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.release>23</maven.compiler.release>
-        <exec.mainClass>br.com.freelacademy.view.TelaLogin</exec.mainClass>
+        <exec.mainClass>br.com.freelacademy.view.TelaEscolhe</exec.mainClass>
     </properties>
 </project>

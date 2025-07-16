@@ -1,5 +1,5 @@
+br\com\freelacademy\view\TelaAvisoCliente.class
 br\com\freelacademy\view\TelaCadastro$1.class
-br\com\freelacademy\view\TelaLogin$6.class
 br\com\freelacademy\model\Usuario.class
 br\com\freelacademy\view\TelaLogin$4.class
 br\com\freelacademy\view\TelaCadastro$6.class
@@ -8,8 +8,10 @@ br\com\freelacademy\model\ConexaoDB.class
 br\com\freelacademy\view\TelaCadastro$3.class
 br\com\freelacademy\view\TelaPrincipal$1.class
 br\com\freelacademy\view\TelaCadastro$5.class
+br\com\freelacademy\view\TelaEscolhe$1.class
 br\com\freelacademy\view\TelaEscolhe.class
 br\com\freelacademy\view\TelaLogin$1.class
+br\com\freelacademy\view\TelaAvisoCliente$1.class
 br\com\freelacademy\view\TelaResetSenha$2.class
 br\com\freelacademy\view\TelaBackup.class
 br\com\freelacademy\view\TelaCadastro$2.class
