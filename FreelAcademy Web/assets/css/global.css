@@ -1,0 +1,35 @@
+/* ARQUIVO: assets/css/global.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    /* Cores Oficiais */
+    --primary: #00315f;      /* Azul Escuro */
+    --secondary: #0093D4;    /* Azul Claro (Ciano) */
+    --tertiary: #2B87AD;     /* Azul Médio */
+    --white: #ffffff;
+    --text-dark: #1a1a1a;
+    --text-light: #555555;
+    --bg-light: #f0f5f9;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-dark);
+    background-color: var(--bg-light);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- BOTÕES GERAIS --- */
+/* Estilo base para botões, para não ficarem "soltos" */
+button, .btn {
+    cursor: pointer;
+    font-family: inherit;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | FreelAcademy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+</head>
+
+<body class="auth-body" style="flex-direction: column;">
+
+    <div class="auth-card">
+        <div style="margin-bottom: 30px;">
+            <a href="index.html" class="logo" style="color: var(--primary); font-size: 28px;">
+                Freel<span style="color: var(--secondary);">Academy</span>
+            </a>
+        </div>
+
+        <div class="auth-header">
+            <h2>Bem-vindo de volta!</h2>
+            <p>Acesse seu painel para gerenciar projetos.</p>
+        </div>
+
+        <form onsubmit="event.preventDefault(); window.location.href='home-freelancer.html';">
+            
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <div class="input-icon-wrapper">
+                    <input type="email" id="email" placeholder="ex: joao@email.com" required>
+                    <i class="fas fa-envelope"></i>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                    <label for="senha" style="margin: 0;">Senha</label>
+                    <a href="#" style="font-size: 0.85rem; color: var(--secondary); text-decoration: none; font-weight: 600;">Esqueceu a senha?</a>
+                </div>
+                <div class="input-icon-wrapper">
+                    <input type="password" id="senha" placeholder="••••••••" required>
+                    <i class="fas fa-lock"></i>
+                </div>
+            </div>
+
+            <button type="submit" class="btn-full">ACESSAR CONTA</button>
+
+        </form>
+
+        <div class="auth-footer">
+            Ainda não tem uma conta? <br>
+            <a href="cadastro.html">Cadastre-se Gratuitamente</a>
+        </div>
+    </div>
+
+    <div class="login-footer-container">
+        <p>
+            &copy; 2025 Freelacademy Tecnologia Ltda.<br>
+            <a href="#">Termos de Uso</a> • <a href="#">Política de Privacidade</a>
+        </p>
+    </div>
+
+</body>
+</html>

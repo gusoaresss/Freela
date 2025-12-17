@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel da Empresa | FreelAcademy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+</head>
+<body>
+
+    <div class="dashboard-wrapper">
+        
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <a href="index.html" class="logo full-logo">
+                    Freel<span class="logo-text">Academy</span>
+                </a>
+
+                <a href="index.html" class="logo short-logo">
+                    F<span>A</span>
+                </a>
+                
+                <button class="toggle-btn" id="sidebarToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            
+            <ul class="sidebar-menu">
+                <li>
+                    <a href="#" class="active"><i class="fas fa-chart-line"></i> <span>Visão Geral</span></a>
+                </li>
+                <li style="margin: 10px 20px;">
+                    <a href="client-nova-vaga.html" class="btn-primary" style="justify-content: center; color: white !important;">
+                        <i class="fas fa-plus-circle"></i> <span style="margin-left: 8px;">Nova Vaga</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-briefcase"></i> <span>Minhas Vagas</span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-users"></i> <span>Candidatos</span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-file-invoice-dollar"></i> <span>Financeiro</span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-cog"></i> <span>Configurações</span></a>
+                </li>
+            </ul>
+
+            <div class="sidebar-footer">
+                <div class="user-profile">
+                    <img src="https://images.unsplash.com/photo-1560179707-f14e90ef3623?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" alt="Logo Empresa" class="user-avatar">
+                    <div class="user-info">
+                        <h4>Tech Solutions</h4>
+                        <p>Plano Enterprise</p>
+                    </div>
+                    <a href="index.html" style="margin-left: auto; color: #ff6b6b;"><i class="fas fa-sign-out-alt"></i></a>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content" id="mainContent">
+            
+            <div class="page-header">
+                <div>
+                    <h2>Olá, Equipe Tech! 👋</h2>
+                    <p style="color: #666;">Aqui está o que está acontecendo com suas vagas hoje.</p>
+                </div>
+                <div style="font-size: 0.9rem; color: #888;">
+                    <i class="far fa-calendar-alt"></i> 10 de Dezembro, 2025
+                </div>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-briefcase"></i></div>
+                    <div class="stat-info">
+                        <h3>3</h3>
+                        <p>Vagas Abertas</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-user-clock"></i></div>
+                    <div class="stat-info">
+                        <h3>12</h3>
+                        <p>Novas Propostas</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-check-circle"></i></div>
+                    <div class="stat-info">
+                        <h3>5</h3>
+                        <p>Projetos Concluídos</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-wallet"></i></div>
+                    <div class="stat-info">
+                        <h3>R$ 1.250</h3>
+                        <p>Em Custódia</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-box">
+                <div class="section-header">
+                    <h3 style="color: var(--primary);">Vagas Recentes</h3>
+                    <a href="#" style="color: var(--secondary); text-decoration: none; font-weight: 600;">Ver todas &rarr;</a>
+                </div>
+
+                <div class="table-responsive">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Título da Vaga</th>
+                                <th>Candidatos</th>
+                                <th>Orçamento</th>
+                                <th>Status</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="font-weight: 600;">Desenvolvedor Front-end React</td>
+                                <td><i class="fas fa-user"></i> 8 propostas</td>
+                                <td>R$ 4.500</td>
+                                <td><span class="status-badge status-active">Ativa</span></td>
+                                <td>
+                                    <a href="#" class="btn-sm btn-outline-primary">Ver Propostas</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Design de App Delivery</td>
+                                <td><i class="fas fa-user"></i> 4 propostas</td>
+                                <td>R$ 2.200</td>
+                                <td><span class="status-badge status-review">Em Análise</span></td>
+                                <td>
+                                    <a href="#" class="btn-sm btn-outline-primary">Gerenciar</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="color: #999;">Automação de Planilhas Excel</td>
+                                <td style="color: #999;">Contratado</td>
+                                <td style="color: #999;">R$ 800</td>
+                                <td><span class="status-badge status-closed">Fechada</span></td>
+                                <td>
+                                    <a href="#" style="color: #666; font-size: 0.85rem;">Detalhes</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="assets/js/scripts.js"></script>
+
+</body>
+</html>
