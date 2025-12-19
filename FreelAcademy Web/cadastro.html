@@ -5,84 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro | FreelAcademy</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
     <link rel="stylesheet" href="assets/css/global.css">
-    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/auth.css">
 </head>
-<body class="auth-body" style="flex-direction: column;"> 
+<body>
 
-    <div class="auth-card">
-        <div style="margin-bottom: 20px;">
-            <a href="index.html" class="logo" style="color: var(--primary); font-size: 28px;">
-                Freel<span style="color: var(--secondary);">Academy</span>
-            </a>
-        </div>
+    <div class="auth-page">
+        <div class="auth-bg-image"></div>
+        <div class="auth-overlay"></div>
 
-        <div class="auth-header">
-            <h2>Crie sua conta</h2>
-            <p>Junte-se a milhares de profissionais.</p>
-        </div>
-
-        <form onsubmit="event.preventDefault(); alert('Cadastro realizado! Faça login.'); window.location.href='login.html';">
+        <div class="auth-box">
             
-            <div class="form-group">
-                <label for="tipo">Qual o seu objetivo?</label>
-                <div class="input-icon-wrapper">
-                    <select id="tipo" required style="cursor: pointer; background: white;">
-                        <option value="" disabled selected>Selecione seu perfil...</option>
-                        <option value="freelancer">Quero TRABALHAR (Sou Freelancer)</option>
-                        <option value="cliente">Quero CONTRATAR (Sou Empresa)</option>
-                    </select>
-                    <i class="fas fa-briefcase"></i>
+            <div class="auth-header">
+                <a href="index.html" class="logo-auth">
+                    <span>Fr<span style="color: var(--secondary);">ee</span>lacademy</span>
+                    <img src="assets/img/logo-passaro-original.svg" alt="Pássaro">
+                </a>
+                <p>Crie sua conta gratuita em segundos.</p>
+            </div>
+
+            <form action="login.html">
+                
+                <label class="form-label">Eu quero:</label>
+                <div class="type-selector">
+                    <label class="type-option">
+                        <input type="radio" name="perfil" value="freelancer" checked>
+                        <div class="type-box">
+                            <i class="fas fa-laptop-code"></i>
+                            <span>Trabalhar</span>
+                        </div>
+                    </label>
+                    <label class="type-option">
+                        <input type="radio" name="perfil" value="cliente">
+                        <div class="type-box">
+                            <i class="fas fa-briefcase"></i>
+                            <span>Contratar</span>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Nome Completo</label>
+                    <input type="text" class="form-input" placeholder="Seu nome" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">E-mail</label>
+                    <input type="email" class="form-input" placeholder="seu@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Senha</label>
+                    <input type="password" class="form-input" placeholder="Mínimo 8 caracteres" required>
+                </div>
+
+                <div class="check-wrapper">
+                    <input type="checkbox" required id="lgpd-check">
+                    <label for="lgpd-check">
+                        Li e concordo com os <a href="#">Termos de Uso</a> e a <a href="#">Política de Privacidade</a>.
+                    </label>
+                </div>
+
+                <button type="submit" class="btn-submit">Criar Conta</button>
+            </form>
+
+            <div class="auth-footer">
+                Já tem cadastro? <a href="login.html">Fazer Login</a>
+                <div style="margin-top: 15px; font-size: 0.75rem; color: #aaa;">
+                    &copy; 2025 FreelAcademy Tecnologia.
                 </div>
             </div>
-
-            <div class="form-group">
-                <label for="nome">Nome Completo</label>
-                <div class="input-icon-wrapper">
-                    <input type="text" id="nome" placeholder="Seu nome" required>
-                    <i class="fas fa-user"></i>
-                </div>
-            </div>
-
-            <div class="form-group">
-                <label for="email">E-mail</label>
-                <div class="input-icon-wrapper">
-                    <input type="email" id="email" placeholder="seu@email.com" required>
-                    <i class="fas fa-envelope"></i>
-                </div>
-            </div>
-
-            <div class="form-group">
-                <label for="senha">Senha Segura</label>
-                <div class="input-icon-wrapper">
-                    <input type="password" id="senha" placeholder="Mínimo 8 caracteres" required minlength="8">
-                    <i class="fas fa-lock"></i>
-                </div>
-            </div>
-
-            <div class="lgpd-check">
-                <input type="checkbox" id="lgpd" required>
-                <label for="lgpd" style="font-weight: 400; color: #666; font-size: 0.8rem; margin: 0;">
-                    Li e concordo com os <a href="#" style="color: var(--secondary);">Termos de Uso</a> e autorizo o tratamento dos meus dados conforme a <a href="#" style="color: var(--secondary);">Política de Privacidade</a>.
-                </label>
-            </div>
-
-            <button type="submit" class="btn-full">CRIAR CONTA</button>
-
-        </form>
-
-        <div class="auth-footer">
-            Já tem uma conta? <br>
-            <a href="login.html">Fazer Login</a>
         </div>
-    </div>
-
-    <div class="login-footer-container">
-        <p>
-            &copy; 2025 Freelacademy Tecnologia Ltda. CNPJ: 00.000.000/0001-00<br>
-            <span style="opacity: 0.7; font-size: 0.8rem;">Protegido por reCAPTCHA e sujeito às Políticas do Google.</span>
-        </p>
     </div>
 
 </body>
