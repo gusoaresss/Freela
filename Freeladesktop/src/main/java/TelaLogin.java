@@ -1,5 +1,6 @@
 
 import javax.swing.JOptionPane;
+import service.LoginService;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -8,7 +9,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author Gustavo
+ * @author Thiago
  */
 public class TelaLogin extends javax.swing.JFrame {
 
@@ -180,22 +181,27 @@ public class TelaLogin extends javax.swing.JFrame {
 
     private void btnEntrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEntrarActionPerformed
         // TODO add your handling code here:
-               if(txtUsuario.getText().equals("marcola21") && new String(txtSenha.getPassword()).equals("1234")){
-                   
-            
-            JOptionPane.showMessageDialog(null, "Logado");
-            
-            //Abrir tela "Tela Home"
-        TelaHome jf2 = new TelaHome();
-        jf2.show(); //exibir (TelaHome) aqui
-        
-        dispose(); //fechar quadro atual (TelaLogin) após abrir o TelaHome
-        
-        
-        }else {
-            JOptionPane.showMessageDialog(null, "Usuário ou senha incorretos!");
-        }
-        
+              LoginService service = new LoginService();
+
+boolean autenticado = service.autenticar(
+        txtUsuario.getText(),
+        new String(txtSenha.getPassword())
+);
+
+if (autenticado) {
+
+    JOptionPane.showMessageDialog(null, "Logado");
+
+    TelaHome jf2 = new TelaHome();
+    jf2.setVisible(true);
+
+    dispose();
+
+} else {
+
+    JOptionPane.showMessageDialog(null, "Usuário ou senha incorretos!");
+}
+
     }//GEN-LAST:event_btnEntrarActionPerformed
 
     private void btnNaotemcadastroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNaotemcadastroActionPerformed

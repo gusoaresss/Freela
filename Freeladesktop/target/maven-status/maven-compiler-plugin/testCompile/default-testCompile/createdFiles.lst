@@ -1,0 +1,6 @@
+CalculadoraTest.class
+ValidadorEmailTest.class
+ValidadorLoginTest.class
+ValidadorSenhaTest.class
+service\LoginServiceTest.class
+UsuarioTest.class
